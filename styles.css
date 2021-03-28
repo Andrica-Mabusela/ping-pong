@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+canvas{
+    border: 1px solid black;
+    background-color: black;
+}
+
+
+#click-audio-wrapper{
+    display: none;
+}
+
+#pause-game{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+
+#pause-game-content{
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#pause-game-content button{
+    background-color: lime;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid limegreen;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px green;
+    transition: all 0.5 ease-in-out;
+    cursor: pointer;
+}
+
+#pause-game-content button:hover{
+    box-shadow: 5px 5px 7px green;
+    transform: scale(1.07, 1.07);
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+#wrapper canvas{
+    margin-bottom: 10px;
+    width: 100vw;
+    height: 100vh;
+}
+
+#game-instructions-overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: lightgrey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-instructions-overlay button{
+    background-color: lime;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px lightgrey;
+}
+
+#game-instructions-overlay h1{
+    font-size: 40px;
+}
+
+#game-instructions-overlay h2{
+    font-size: 25px;
+}
+
+#game-instructions-overlay h3{
+    font-size: 35px;
+}

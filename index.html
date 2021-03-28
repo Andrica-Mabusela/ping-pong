@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ping Pong | Have Fun</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body onload="showInstructions()">
+
+
+	
+	<div id="click-audio-wrapper">
+        <audio controls="controls" id="audio">
+            <source src="audio/click-sound.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+        </audio>
+    </div>
+
+
+	<div id="pause-game">
+		<div id="pause-game-content">
+			<div>
+				<h1>Game Is Paused!</h1>
+				<br>
+				<button onclick="resumeGame()">Resume Game</button>
+			</div>
+		</div>
+	</div>
+
+
+<div id="wrapper">
+	<canvas></canvas>
+</div>
+
+	<div id="game-instructions-overlay">
+		<div>
+			<div>
+				<h2>Player 1 Controls</h2>
+				<h3>Up:  ArrowUp</h3>
+				<h3>Down:  ArrowDown</h3>
+			</div>
+			<br><br>
+			<div>
+				<h2>Player 2 Controls</h2>
+				<h3>Up:  A</h3>
+				<h3>Down:  S</h3>
+			</div>
+	
+			<div>
+				<h3 style="color: red">Press NumSpace To Pause The Game</h3>
+			</div>
+			
+			<div style="text-align: center;">
+				<button id="rm-instruction-btn">play game</button>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<script src="script.js"></script>
+</body>
+</html>
